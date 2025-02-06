@@ -1,37 +1,16 @@
 
-
 function validadorCpf(cpf){
- if (cpf.length > 14) {return false};
-let somaTotal = 0;
 let numerosCpf = cpf.replace(/\D+/g, "");
- numerosCpf = numerosCpf.slice(0, -2)
+ if (numerosCpf.length !== 11) {return false};
  if (numerosCpf === numerosCpf[0].repeat(numerosCpf.length)) {return false}
- numerosCpf = numerosCpf.split("");
+ const cpfParcial = numerosCpf.slice(0, -2)
+ let cpfArray = cpfParcial.split("");
 
- for (let i = 0; i < numerosCpf.length; i++){
-    numerosCpf[i] = parseInt(numerosCpf[i])
- }
+const primeiroDigito = criaDigito(cpfArray);
+cpfArray.push(primeiroDigito)
+const segundoDigito = criaDigito(cpfArray);
 
-for (let i = 0, j = 10; i < numerosCpf.length; i++, j--){
-    somaTotal += j * numerosCpf[i]
-}
-
-let primeiroDigito = 11 - (somaTotal % 11)
-if (primeiroDigito > 9){
-    primeiroDigito = 0;
-}
-numerosCpf.push(primeiroDigito);
-somaTotal = 0
-for (let i = 0, j = 11; i < numerosCpf.length; i++, j--){
-    somaTotal += j * numerosCpf[i]
-}
-
-let segundoDigito = 11 - (somaTotal % 11);
-if (segundoDigito > 9){
-    segundoDigito = 0
-}
-
-if (primeiroDigito.toString() + segundoDigito.toString() === cpf.slice(-2)){
+if (primeiroDigito + segundoDigito === numerosCpf.slice(-2)){
     return true;
 }
 else{
@@ -39,10 +18,14 @@ else{
 }
 }
 
+function criaDigito(array){
+    let somaTotal = 0;
+    for (let i = 0, j = (array.length + 1); i < array.length; i++, j--){
+        somaTotal += j * Number(array[i])
+    }
 
-console.log(validadorCpf("705.484.450-52"))
-console.log(validadorCpf("882.731.250-17"))
-console.log(validadorCpf("044.092.450-23"))
-console.log(validadorCpf("194.987.120-77"))
-console.log(validadorCpf("246.315.940-55"))
-console.log(validadorCpf("111.111.111-11"))
+    let digito = 11 - (somaTotal % 11);
+    return digito > 9 ? "0" : String(digito)
+
+}
+
