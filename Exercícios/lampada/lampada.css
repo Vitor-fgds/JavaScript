@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px
+
+}
+
+.imagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.botoes{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button{
+    width: 80px;
+    height: 30px;
+    border-radius: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    padding: 3px;
+}

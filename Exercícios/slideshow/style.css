@@ -1,0 +1,29 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-slide{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-images{
+    border: 3px solid black;
+    margin: 10px;
+    box-shadow: 0 20px 30px black;
+}
+
+.action-button{
+    font-size: 75px;
+}
