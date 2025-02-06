@@ -36,7 +36,7 @@ ValidaCPF.prototype.criaDigito = function(cpfParcial){
 }
 
 ValidaCPF.prototype.isSequencia = function() {
-    return this.cpfLimpo[0].repeat(this.cpfLimpo.length);
+    return this.cpfLimpo === this.cpfLimpo[0].repeat(this.cpfLimpo.length);
     
 }
 
