@@ -1,0 +1,280 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-y: auto;
+}
+.sobremenu{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0px;
+    width: 100vw;
+    height: 7vh;
+    background-color: #8eba1c;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.telefones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 30vw;
+
+}
+
+.icones-sociais{
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+    justify-content: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 12vh;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+    justify-content: center;
+}
+
+.lista{
+    display: flex;
+    flex-direction: row;
+    width: 45vw;
+    justify-content: center;
+}
+
+.lista ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.lista ul li{
+    color: #8eba1c;
+    margin: 0px 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.lista ul li a{
+    color: #8eba1c;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 600ms ease-in-out;
+}
+
+.lista ul li a:hover{
+    color: black;
+    font-size: 21px;
+
+}
+
+
+.imagem-home{
+    background-image: url(imagens/home.png) ;
+    width: 100vw;
+    height: 62vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-home h1{
+    display: inline-block;
+    width: 40vw;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 56px;
+    text-align: center;
+}
+
+.quemsomos{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-quemsomos{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50vw;
+    margin-right: 1vw;
+}
+
+.texto-quemsomos{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding-right: 20vw;
+    margin-left: 1vw;
+}
+
+.texto-quemsomos h2{
+    color: #7a7a7a;
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+}
+
+.texto-quemsomos h1{
+    color: #8eba1c;
+    font-size: 48px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 15px;
+}
+
+.texto-quemsomos p{
+    color: #69727d;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.acompanhamento-nutricional{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 60vh;
+    align-items: center;
+}
+
+.quadrados{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 35vh;
+
+}
+
+.quadrado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin: 5% 2.5%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    box-shadow: 5px black;
+    justify-content: center;
+}
+
+.quadrado svg,h2,p{
+    margin: 10px;
+}
+
+.acompanhamento-nutricional div h1{
+    color: #8eba1c;
+    font-size: 46px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.Especialidades{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 110vh;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #171717;
+
+}
+
+.Especialidades h1{
+    margin-top: 50px;
+    color: white;
+    font-size: 46px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.Especialidades h2{
+    color: white;
+    font-size: 28px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.especialidade-group{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 70vh;
+}
+
+.especialidade{
+    display: flex;
+    flex-direction: row;
+    background-color: #8eba1c;
+    margin: 20px;
+    border-radius: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+
+}
+
+
+.textos{
+    display: flex;
+    flex-direction: column;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 40vh;
+    background-color: white;
+    padding-top: 50px;
+}
+
+.contato h1{
+    color: #8eba1c;
+    font-size: 38px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contato h2{
+    color: #171717;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 30px;
+}
+
+.icone-contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icone-contato p{
+    font-size: 24px;
+}
+
