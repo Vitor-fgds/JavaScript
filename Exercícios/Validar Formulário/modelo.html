@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="modelo.css">
+</head>
+<body>
+    
+    <section class="container">
+        <h1>Formulário de Cadastro</h1>
+        <ul>
+            <li>Nenhum campo pode estar vazio</li>
+            <li>Usuário só poderá conter letras e/ou numeros</li>
+            <li>Usuário deverá ter entre 3 e 12 caracteres</li>
+            <li>Senha precisa ter entre 6 e 12 caracteres</li>
+        </ul>
+        <form action="" class="form">
+            <div class="div-nome">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+            </div>
+            <div class="div-sobrenome">
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome">
+            </div>
+            <div class="div-cpf">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf">
+            </div>
+            <div class="div-usuario">
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario">
+            </div>
+            <div class="div-senha">
+                <label for="senha">Senha:</label>
+                <input type="text" id="senha" type="password">
+            </div>
+            <div class="div-senharepetida">
+                <label for="senharepetida">Repetir senha:</label>
+                <input type="text" id="senharepetida" type="password">
+            </div>
+
+            <button class="botao-form">Enviar</button>
+        </form>
+    </section>
+
+
+    <script src="modelo.js"></script>
+</body>
+</html>
