@@ -25,7 +25,7 @@ Consiste basicamente em importar o módulo mongoose e utilizar o método connect
 da função o link de conexão, que pode ser encontrado na aba connect no site do MongoDB, em seguida
 devemos trocar a senha em admin:<password> para a senha definida para o banco de dados. Podemos
 também modificar a url após a / em mongodb.net/---- */ 
-mongoose.connect("mongodb+srv://admin:jBCpCvQNGNSxqbIl@backenddb.vch5c.mongodb.net/?retryWrites=true&w=majority&appName=BackendDB")
+mongoose.connect("mongodb+srv://admin:<password>@backenddb.vch5c.mongodb.net/?retryWrites=true&w=majority&appName=BackendDB")
 .then(() => {
     console.log("Connected to database");
 })
